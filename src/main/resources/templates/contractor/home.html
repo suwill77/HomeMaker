@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" type="image/png" th:href="@{/images/logo.jpg}">
+
+  <title>Anpan home page</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link th:href="@{/css/style.css}" rel="stylesheet" />
+  <link th:href="@{/css/apna_style.css}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link th:href="@{/css/responsive.css}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="/images/logo.jpg" alt="" style="border-radius: 50%;" height="70px" />
+          </a>
+          <div class="navbar-collapse" id="">
+            <ul class="navbar-nav justify-content-between ">
+              <div class="User_option">
+                <li class="">
+            
+                  <a class="" href="/logout">
+                    LogOut
+                  </a>
+                </li>
+              </div>
+            </ul>
+
+            
+            
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- contact section -->
+   <div class="main">
+    <form th:action="@{/contractor/process-contact}" method="post" enctype="multipart/form-data">
+        <div class="container">
+          <h1>DETAILS OF YOUR PLOT</h1>
+          
+          <hr>
+      
+          <label for="name"><b>NAME</b></label>
+          <input type="text" placeholder="Enter name" name="name" id="name" required>
+      
+          <label for="whatsappNumber"><b>WHATSAPP NUMBAR</b></label>
+          <input type="text" placeholder="Enter number" name="number" id="number" required>
+      
+          <label for="Address"><b>PLOT ADDRESS</b></label>
+          <input type="text" placeholder="plot Address" name="address" id="address" required>
+          
+          <label for="pincode"><b>PINCODE</b></label>
+          <input type="text" placeholder="Pincode" name="pincode" id="pincode" required>
+          
+          <label for="lop"><b>LENGTH OF PLOT</b></label>
+          <input type="text" placeholder="length of plot" name="lenplot" id="lop" required>
+          
+          <label for="wop"><b>WIDTH OF PLOT</b></label>
+          <input type="text" placeholder="width of plot" name="widthplot" id="wop" required>
+          
+          <label for="facing"><b>PLOT FACING</b></label>
+          <input type="text" placeholder="plot facing" name="plotfacing" id="facing" required>
+
+          
+          <label for="no-floor"><b>NO OF FLOOR</b></label>
+          <input type="text" placeholder="No of floor" name="floor" id="no-floor" required>
+          
+          
+          <br>
+          <label for="pic"><b>UPLOAD PICTURE</b></label>
+          <input type="file" placeholder="upload image" name="image" id="pic" required>
+          <hr>
+      
+          
+          <button type="submit" class="registerbtn">SUBMIT</button>
+        </div>
+      
+       
+      </form>
+
+    </div>     
+
+  <!-- end contact section -->
+
+
+
+  <!-- info section -->
+ <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              About Apartment
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="images/location.png" width="18px" alt="">
+              </div>
+              <p>
+                Home Maker Hazaribag
+Shop no.58 ,first floor, Block G, Matwari Masjid Rd, Gandhi Maidan, Hazaribagh, Jharkhand 825301
+
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/phone.png" width="12px" alt="">
+              </div>
+              <p>
+                 +919008291455
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/mail.png" width="18px" alt="">
+              </div>
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Information
+            </h5>
+            <p>
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Useful Link
+            </h5>
+            <ul>
+              <li>
+                <a href="">
+                  There are many
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  variations of
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  passages of
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  available, but
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  the i
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <img src="images/fb.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/twitter.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/linkedin.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+    
+      </p>
+    </div>
+  </section>
+  <!-- end  footer section --> 
+  <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+  <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+  <script type="text/javascript" th:src="@{/js/custom.js}"></script>
+
+
+
+ 
+</body>
+</body>
+
+</html>
